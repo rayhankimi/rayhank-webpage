@@ -9,19 +9,6 @@
     background-color: var(--navbar-bg-color) !important;
 }
 
-#brand-logo{
-    margin-left: 10px;
-    margin-right: 15px;
-}
-#brand-text{
-    color: var(--navbar-text-color);
-
-}
-#navbarNav{
-    justify-content: flex-end;
-}
-
-
 .nav-link {
     color: var(--navbar-text-color) !important;
 }
