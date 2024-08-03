@@ -22,7 +22,7 @@ function App() {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-4">
-                            <img src={photo1} height="400" width="400"/>
+                            <img src={photo1} height="350" width="350"/>
                         </div>
                         <div className="col-md-8">
                             <h2> Personal Life </h2> <hr/>
@@ -63,7 +63,7 @@ function App() {
 
                         </div>
                         <div className="col-md-4">
-                            <img src={photo2} height="400" width="400"/>
+                            <img src={photo2} height="350" width="350"/>
                         </div>
                     </div>
                 </div>
