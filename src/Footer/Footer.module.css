@@ -1,12 +1,31 @@
 :root {
-    --footer-bg-color: #283D3B;
+    --footer-bg-color: #772E25;
     --footer-text-color: #EDDDD4;
+    --footer-link-color: #EDDDD4;
+    --footer-link-hover-color: #FFD700; /* Warna hover bisa diubah sesuai kebutuhan */
 }
 
 .footer {
     background-color: var(--footer-bg-color);
     color: var(--footer-text-color);
-    padding: 20px 0;
     text-align: center;
+    padding: 10px 0;
+}
+
+.footer p,
+.footer a {
+    margin: 0;
+    padding: 5px 0;
     font-size: 14px;
+    color: var(--footer-text-color);
+    text-decoration: none;
+}
+
+.footer a {
+    display: block;
+}
+
+.footer a:hover {
+    color: var(--footer-link-hover-color);
+    text-decoration: underline;
 }

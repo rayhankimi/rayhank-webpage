@@ -1,0 +1,42 @@
+.App {
+    text-align: center;
+    background-color: #f5efed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+.top-text{
+    font-size: 50px;
+    font-weight: bold;
+    color: #772E25;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container{
+    max-width: fit-content;
+    margin-bottom: calc(10px + 2vmin);
+    transition: outline 500ms ease 0s,max-width 500ms ease 0s, max-height 500ms ease 0s;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+}
+h2{
+    margin: 10px 0;
+    color: #772E25;
+}
+p{
+    margin: 10px 0;
+    color: #197278;
+
+}
+.col-image{
+    max-width: 60%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}

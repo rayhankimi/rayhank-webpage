@@ -1,16 +1,17 @@
 import Footer from "./Footer/Footer.jsx";
 import photo1 from "./assets/img.png"
-import pringga from './assets/pringga.png';
+import pringga from './assets/brand.png';
 import Navbar from "./Navbar/Navbar.jsx";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 function App() {
 
     return (
-        <>
+        <div className="main-page">
+
             <Navbar logo={pringga}/>
-            <br/>
-            <br/>
+            <p className="top-text"> Lorem Ipsum sit Dolot Amet!</p>
             <div className="container">
                 <div className="row">
                     <div className="col-md-4">
@@ -31,8 +32,6 @@ function App() {
 
                 </div>
             </div>
-            <br/>
-            <br/>
             <div className="container">
                 <div className="row">
                     <div className="col-md-8">
@@ -47,14 +46,14 @@ function App() {
                             dolores enim facilis, fugit illo in magni minima numquam ratione saepe sequi similique
                             soluta, tempora vel vitae. Facilis!</p>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 col-image">
                         <img src={photo1} height="300" width="300"/>
                     </div>
                 </div>
             </div>
             <br/>
             <Footer/>
-        </>
+        </div>
     );
 }
 

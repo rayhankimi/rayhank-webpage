@@ -1,14 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Navbar.css'; // Mengimpor CSS kustom
-// import logo from './assets/image/head-image.png'; // Pastikan Anda memiliki gambar ini di direktori yang benar
+import './Navbar.css';
 
 function Navbar(props) {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
             <a className="navbar-brand d-flex align-items-center" href="#">
-                <img src={props.logo} alt="logo" height="40" width="40" className="d-inline-block align-top" />
-                <span>Rayhan Kimi</span>
+                <img src={props.logo} alt="logo" height="40" width="40" className="d-inline-block align-top" id="brand-logo"/>
+                <span id="brand-text">Rayhan Kimi</span>
             </a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
