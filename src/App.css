@@ -98,7 +98,7 @@ html {
 
 /* Container styling */
 .container {
-    max-width: fit-content;
+    max-width: 100%;
     margin-bottom: calc(10px + 2vmin);
     transition: outline 500ms ease 0s, max-width 500ms ease 0s, max-height 500ms ease 0s;
     padding: 20px;
@@ -169,11 +169,16 @@ p {
     }
 
     .header {
-        margin-bottom: 40px; /* Added space between header and body */
+        margin-bottom: 20px; /* Mengurangi margin bawah pada header */
         min-height: 100vh; /* Ensure header fills the screen height */
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .container {
+        padding: 0 10px; /* Mengurangi padding pada container di mobile */
+        text-align: left; /* Mengubah alignment teks menjadi kiri */
     }
 }
 
@@ -200,5 +205,9 @@ p {
 
     .col-image {
         width: 60%;
+    }
+
+    .header {
+        margin-bottom: 40px; /* Mengurangi margin atas pada header */
     }
 }
