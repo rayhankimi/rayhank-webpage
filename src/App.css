@@ -167,6 +167,10 @@ p {
     .col-image {
         width: 80%;
     }
+
+    .header {
+        margin-bottom: 20px; /* Added space between header and body */
+    }
 }
 
 @media (min-width: 1024px) {
