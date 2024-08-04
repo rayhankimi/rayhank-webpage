@@ -159,6 +159,14 @@ p {
     .button-60 {
         font-size: calc(0.75rem + 0.5vw);
     }
+
+    .top-image {
+        width: 80%;
+    }
+
+    .col-image {
+        width: 80%;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -176,5 +184,13 @@ p {
 
     .button-60 {
         font-size: calc(1rem + 0.5vw);
+    }
+
+    .top-image {
+        width: 50%;
+    }
+
+    .col-image {
+        width: 60%;
     }
 }
