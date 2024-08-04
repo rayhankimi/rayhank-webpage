@@ -169,7 +169,11 @@ p {
     }
 
     .header {
-        margin-bottom: 20px; /* Added space between header and body */
+        margin-bottom: 40px; /* Added space between header and body */
+        min-height: 100vh; /* Ensure header fills the screen height */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
