@@ -1,4 +1,5 @@
 import Footer from "./Footer/Footer.jsx";
+import topimage from "./assets/bg_img.png";
 import photo1 from "./assets/img_1.png";
 import photo2 from "./assets/img_2.png";
 import brandImg from './assets/brand.png';
@@ -13,9 +14,11 @@ function App() {
             <Navbar logo={brandImg}/>
             <div className="header">
                 <p className="top-text"> Welcome to my Personal Page!</p>
-                <p className="top-text2"> I have no idea what quote to put here, so i'll just put a "Lorem ipsum dolor
-                    sit amet, consectetur adipisicing elit. Ad aliquam dicta distinctio inventore magnam magni
-                    obcaecati, perspiciatis possimus quia repellat." instead!</p>
+                <img src={topimage} alt="image" height="557" width="1073" className="top-image"/>
+                <p className="top-text2"> Source Code of this page :</p>
+                <button className="button-60" role="button">
+                    <a href="https://github.com/rayhankimi/rayhank-webpage" target="_blank"> Repo</a>
+                </button>
             </div>
 
             <div id="body">

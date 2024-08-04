@@ -1,3 +1,9 @@
+/* Root font size for responsive typography */
+html {
+    font-size: 16px;
+}
+
+/* App container styling */
 .App {
     text-align: center;
     background-color: #f5efed;
@@ -6,74 +12,169 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(20px + 2vmin);
+    font-size: calc(1rem + 0.5vw);
     color: white;
 }
-.header{
-    background-color: #f8fdff;
+
+/* Header styling */
+.header {
     color: white;
     padding: 20px;
     text-align: center;
     width: 100%;
-
 }
-.row-cols-6{
-    display: flex;
-    flex-wrap: wrap;
+
+/* Top image styling */
+.top-image {
+    width: 50%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.top-image:hover {
+    opacity: 50%;
+}
+
+/* Top text styling */
+.top-text, .top-text2 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.top-text {
+    font-size: calc(2.5rem + 1vw);
+    font-weight: bold;
+    color: #772E25;
+    margin-top: 10px;
+}
+
+.top-text2 {
+    font-size: calc(1rem + 0.5vw);
+    font-weight: bold;
+    margin: 20px 20% 10px;
+}
+
+/* Button styling */
+.button-60 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: .375em;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #363636;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: calc(0.875rem + 0.5vw);
+    height: 2.5em;
     justify-content: center;
-
-}
-.top-text{
-    font-size: 62px;
-    font-weight: bold;
-    color: #772E25;
+    line-height: 1.5;
+    padding: calc(.5em - 1px) 1em;
+    position: relative;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 50px;
-    margin-bottom: 450px;
-}
-.top-text2{
-    font-size: 24px;
-    font-weight: bold;
-    color: #772E25;
-    text-align: center;
-    padding: 20px 0;
-    margin: 250px 20% 50px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
 }
 
-.container{
+.button-60:active {
+    border-color: #4a4a4a;
+    outline: 0;
+}
+
+.button-60:focus {
+    border-color: #485fc7;
+    outline: 0;
+    box-shadow: rgba(72, 95, 199, .25) 0 0 0 .125em;
+}
+
+.button-60:hover {
+    border-color: #b5b5b5;
+}
+
+/* Container styling */
+.container {
     max-width: fit-content;
     margin-bottom: calc(10px + 2vmin);
-    transition: outline 500ms ease 0s,max-width 500ms ease 0s, max-height 500ms ease 0s;
+    transition: outline 500ms ease 0s, max-width 500ms ease 0s, max-height 500ms ease 0s;
     padding: 20px;
     text-align: center;
     display: inline-block;
 }
-#body{
+
+/* Body styling */
+#body {
     margin: 0;
     padding: 0;
     font-family: 'Inconsolata', sans-serif;
     background-color: #f5efed;
-
 }
-h2{
-    font-size: 42px;
+
+/* Heading styling */
+h2 {
+    font-size: calc(2rem + 1vw);
     margin: 10px 0;
     color: #772E25;
 }
+
+/* Paragraph styling */
 p {
-    font-size: 20px;
+    font-size: calc(1rem + 0.5vw);
     margin: 10px 0;
     color: #197278;
 }
-.paragraph{
-    font-size: 20px;
+
+.paragraph {
+    font-size: calc(1rem + 0.5vw);
     text-align: left;
     margin: 10px 20px 10px 0;
 }
-.col-image{
+
+/* Column image styling */
+.col-image {
     max-width: 60%;
     height: auto;
     border-radius: 50%;
     margin-bottom: 10px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .top-text {
+        font-size: calc(2rem + 1vw);
+    }
+
+    .top-text2 {
+        font-size: calc(1rem + 0.5vw);
+    }
+
+    .paragraph, p {
+        font-size: calc(0.875rem + 0.5vw);
+    }
+
+    .button-60 {
+        font-size: calc(0.75rem + 0.5vw);
+    }
+}
+
+@media (min-width: 1024px) {
+    .top-text {
+        font-size: calc(3rem + 1vw);
+    }
+
+    .top-text2 {
+        font-size: calc(1.5rem + 0.5vw);
+    }
+
+    .paragraph, p {
+        font-size: calc(1.125rem + 0.5vw);
+    }
+
+    .button-60 {
+        font-size: calc(1rem + 0.5vw);
+    }
 }
