@@ -16,9 +16,9 @@ function App() {
                 <p className="top-text"> Welcome to my Personal Page!</p>
                 <img src={topimage} alt="image" height="557" width="1073" className="top-image"/>
                 <p className="top-text2"> Source Code of this page :</p>
-                <button className="button-60" role="button">
-                    <a href="https://github.com/rayhankimi/rayhank-webpage" target="_blank"> Repo</a>
-                </button>
+
+                <a className="button-60" href="https://github.com/rayhankimi/rayhank-webpage" target="_blank"> Repo</a>
+
             </div>
 
             <div id="body">
